@@ -205,6 +205,7 @@ class Adafruit_DCMotor:
         if (command == Adafruit_MotorHAT.RELEASE):
             self.MC.setPin(self.IN1pin, 0)
             self.MC.setPin(self.IN2pin, 0)
+            self.MC.setPin(self.PWMpin, 1)
     def setSpeed(self, speed):
         if (speed < 0):
             speed = 0
